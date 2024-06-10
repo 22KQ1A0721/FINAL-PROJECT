@@ -1,0 +1,85 @@
+<html>
+   <head>
+         <title>JavaScript functions</title>
+      </head>
+      <style>
+               nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+               
+         body{
+            background-image:url("wallpaper3.jpg");
+            background-size: cover;
+            color:black;
+         }
+      </style>
+      <script>
+ function loginValidation() {
+   var uname = document.myform.username.value;
+   function validateemail()  
+{  
+var myemail=document.myform.email.value;  
+var atposition=myemail.indexOf("@");  
+var dotposition=myemail.lastIndexOf(".");  
+if (atposition<1 || dotposition<atposition+2 || dotposition+2>=myemail.length){  
+  alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
+  return false;  
+  }  
+}
+
+   var password = document.myform.password.value;
+             if(uname==null || uname=="") {
+               alert("Name cant be blank")
+               return false;  
+            } else if (password.length<6){
+               alert("Password Must be 6 letters")
+               return false;
+            }
+            return true                 
+         }           
+      </script>
+      <body>
+         <nav>
+            <ul>
+                    <li><a href="C:\Users\HP\Desktop\main project\home.html">Home</a></li>
+                    <li><a href="C:\Users\HP\Desktop\main project\reg.html">Registration</a></li>
+                    <li><a href="C:\Users\HP\Desktop\main project\visiting.html">visiting</a></li>
+                    <li><a href="C:\Users\HP\Desktop\main project\aboutus.html">About</a></li>
+                    <li><a href="C:\Users\HP\Desktop\main project\classtag.html">A Dog's Tale</a></li>
+                    <li><a href="C:\Users\HP\Desktop\main project\booking.html">Booking site</a></li>
+                    <li><a href="C:\Users\HP\Desktop\main project\contactsite.html">Contactus</a></li>
+                    <li><a href="C:\Users\HP\Desktop\main project\list.html">List of items</a></li>
+                    <li><a href="C:\Users\HP\Desktop\main project\foodsite.html">Food</a></li>
+                  </ul>
+                  </nav>
+          <h2><center>VISITING SITE FORM</center></h2>
+          <br> 
+<center><form name="myform" action="C:\Users\HP\Desktop\main project\vistingsuccess.html"onsubmit="return loginValidation(this)">
+   <br>
+ User Name : <input type="text" name="username"><br>
+  <br>
+   Email: <input type="text" name="email"><br/>  
+   <br>
+Password :  <input type="password" name="password"><br>
+ <br>
+         <input type="submit" value="Submit">  </center>
+   </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+        * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+</style>
+</head>
+<body>
+  <video autoplay muted loop id="myVideo">
+  <source src="video8.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="content">
+  <h1>Heading</h1>
+<p>
+  Dogs are fascinating creatures, aren't they? They've been our companions for thousands of years, evolving alongside humans and becoming an integral part of our lives. Here's a quick overview:
+  
+  <h1>History:</h1> Dogs are descendants of wolves and were domesticated by humans tens of thousands of years ago. They were initially used for tasks like hunting, herding, and guarding, but over time, they've become beloved pets and even service animals.
+  
+  <h1> Variety:</h1> There are hundreds of dog breeds, each with its own unique characteristics in terms of size, temperament, and abilities. From the tiny Chihuahua to the towering Great Dane, there's a dog breed for every lifestyle.
+  
+  Roles:Dogs serve various roles in human society. They're loyal companions, offering emotional support and companionship. They also work in fields such as search and rescue, therapy, police and military service, and as service animals for people with disabilities.
+  
+  Intelligence:Dogs are highly intelligent animals. They can learn commands, understand human emotions, and even problem-solve to some extent. Some breeds are particularly renowned for their intelligence, such as Border Collies and German Shepherds.
+  
+  <h1>Communication:</h1>Dogs communicate primarily through body language, vocalizations like barking and whining, and scent marking. Understanding these cues is essential for effective communication and building a strong bond with your furry friend.
+  
+ <h1> Health and Care: </h1>Proper care is crucial for keeping dogs healthy and happy. This includes providing a balanced diet, regular exercise, grooming, and routine veterinary care. Preventive measures like vaccinations and parasite control are also essential.
+  
+<h1>Human-Dog Bond:</h1> The bond between humans and dogs is incredibly strong and mutually beneficial. Dogs provide companionship, love, and loyalty, while humans offer care, protection, and a sense of belonging. This bond has been the subject of numerous studies highlighting its positive effects on both physical and mental health.
+  
+  Overall, dogs enrich our lives in countless ways, making them truly special creatures worthy of our admiration and care.
+  
+  
+  
+  </p>
+ 
+</div>
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+</script>
+
+</body>
+</html>
